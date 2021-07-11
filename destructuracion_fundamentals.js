@@ -48,7 +48,7 @@ const lastTest = {
 const { key } = lastTest;
 const { secondKey } = lastTest;
 const [, willThisWork] = secondKey;
-//Predict the output
+//Predict the output.
 console.log(key); //loguea: value
 console.log(secondKey); //loguea: [1,5,1,8,3,3]
 console.log(secondKey[0]); //loguea: 1

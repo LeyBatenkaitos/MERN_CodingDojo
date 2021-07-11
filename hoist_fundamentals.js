@@ -94,7 +94,7 @@ function learn() {
 }
 console.log(dojo); //se loguea san jose
 
-//!8
+//!8.
 console.log(makeDojo("Chicago", 65)); //{ name: 'Chicago', students: 65, hiring: true }
 console.log(makeDojo("Berkeley", 0)); //{ name: 'closed for now', students: 0 }
 function makeDojo(name, students) {
