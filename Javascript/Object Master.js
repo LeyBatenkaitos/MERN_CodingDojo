@@ -26,12 +26,13 @@ const pokémon = Object.freeze([
 
 //Una serie de objetos Pokémon donde la identificación es divisible por 3
 const pkDiv3 = pokémon.filter((p) => p.id % 3 == 0);
-console.log(pkDiv3);
+//console.log(pkDiv3);
 //una serie de objetos Pokémon que son del tipo "fuego"
-
-/*Una variedad de objetos Pokémon que tienen más de un tipo
- una matriz con solo los nombres de los Pokémon
- Una matriz con solo los nombres de Pokémon con una identificación mayor que 99
- una matriz con solo los nombres del pokémon cuyo único tipo es veneno
- una matriz que contiene solo el primer tipo de todos los Pokémon cuyo segundo tipo es "volador"
- un recuento de la cantidad de pokémon que son de tipo "normal"*/
+const pkFuego = pokémon.filter((p) => p.types.includes("fire"));
+console.table(pkFuego);
+//Una variedad de objetos Pokémon que tienen más de un tipo
+//una matriz con solo los nombres de los Pokémon
+//Una matriz con solo los nombres de Pokémon con una identificación mayor que 99
+//una matriz con solo los nombres del pokémon cuyo único tipo es veneno
+//una matriz que contiene solo el primer tipo de todos los Pokémon cuyo segundo tipo es "volador"
+//un recuento de la cantidad de pokémon que son de tipo "normal"
