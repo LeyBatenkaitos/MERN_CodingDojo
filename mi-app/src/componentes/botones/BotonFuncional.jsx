@@ -5,7 +5,6 @@ const BotonFuncional = (props) => {
 
   return (
     <div>
-      <h3>{!hambre ? "Pizza" : "Chorrillana"}</h3>
       <button onClick={() => setHambre(!hambre)}>Cambiar Comida</button>
     </div>
   );
