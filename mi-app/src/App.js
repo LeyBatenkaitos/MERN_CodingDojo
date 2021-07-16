@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import Home from "./componentes/home";
 import PersonCard from "./componentes/PersonCard";
+import FunctionalComponent from "./componentes/FunctionalComponent";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
         age={62}
         hairColor="Brown"
       ></PersonCard>
+      <div>
+        <FunctionalComponent></FunctionalComponent>
+      </div>
     </div>
   );
 }
