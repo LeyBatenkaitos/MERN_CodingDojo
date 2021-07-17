@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "./styles/homeStyles.module.css";
 
 class Home extends Component {
   render() {
@@ -6,7 +7,7 @@ class Home extends Component {
 
     console.log("hola soy las props", this.props);
     return (
-      <div className="container">
+      <div className={styles.homeDiv}>
         <div>This is our first class component.</div>
         <div>Hola Dojo {msg}</div>
         <div>

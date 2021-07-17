@@ -3,11 +3,12 @@ import React from "react";
 import PersonCard from "./componentes/PersonCard";
 import FunctionalComponent from "./componentes/FunctionalComponent";
 import CartaPersona from "./componentes/percard";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>Hola Dojo!</h1>
+    <div className="app">
+      <h1 className="appDojo">Hola Dojo!</h1>
       <div>
         <Home />
       </div>
@@ -36,15 +37,15 @@ function App() {
         hairColor="Brown"
       ></PersonCard>
       <div>
-        <FunctionalComponent></FunctionalComponent>
-      </div>
-      <div>
         <CartaPersona
           firstName="Smith"
           lastName="Maria"
           age={62}
           hairColor="Brown"
         />
+      </div>
+      <div>
+        <FunctionalComponent></FunctionalComponent>
       </div>
     </div>
   );

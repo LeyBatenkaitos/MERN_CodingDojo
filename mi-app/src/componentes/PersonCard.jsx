@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "./styles/personCard.module.css";
 
 class PersonCard extends Component {
   constructor(props) {
@@ -14,14 +15,17 @@ class PersonCard extends Component {
   };
   render() {
     return (
-      <div>
+      <div className={styles.personCardDiv}>
         <h1>
           {this.props.firstName},{this.props.lastName}
         </h1>
         <p>Age: {this.state.age}</p>
         <p>Hair Color:{this.props.hairColor}</p>
         <div>
-          <button onClick={this.incrementarEdad}>
+          <button
+            className={styles.buttonPersonCard}
+            onClick={this.incrementarEdad}
+          >
             Birthday Button For {this.props.firstName}
             {this.props.lastName}
           </button>

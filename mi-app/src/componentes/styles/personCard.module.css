@@ -1,0 +1,22 @@
+.personCardDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+  border: 5px solid rgb(9, 80, 77);
+  padding: 5px;
+  background-color: lightseagreen;
+}
+
+.buttonPersonCard {
+  background-color: #6b7293;
+  border-radius: 10px;
+  border: 1px solid #36558f;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #4e6b99;
+}
