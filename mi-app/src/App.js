@@ -3,6 +3,7 @@ import React from "react";
 import PersonCard from "./componentes/PersonCard";
 import FunctionalComponent from "./componentes/FunctionalComponent";
 import CartaPersona from "./componentes/percard";
+import FormularioUsuario from "./componentes/formularioHooks";
 import "./App.css";
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
       </div>
       <div>
         <FunctionalComponent></FunctionalComponent>
+      </div>
+      <div>
+        <FormularioUsuario></FormularioUsuario>
       </div>
     </div>
   );

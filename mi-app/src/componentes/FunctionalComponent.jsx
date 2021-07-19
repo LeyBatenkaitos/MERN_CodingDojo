@@ -9,7 +9,6 @@ const FunctionalComponent = () => {
 
   return (
     <div className={styles.functionalDiv}>
-      <h1>Functional component:</h1>
       <h1>Hoy tengo hambre de... {!hambre ? "Pizza" : "Chorrillana"}</h1>
       <BotonFuncional hambre={hambre} setHambre={setHambre} />
     </div>
