@@ -5,6 +5,7 @@ import FunctionalComponent from "./componentes/FunctionalComponent";
 import CartaPersona from "./componentes/percard";
 import FormularioUsuario from "./componentes/formularioHooks";
 import "./App.css";
+import FormularioFormData from "./componentes/formularioFormData";
 
 function App() {
   return (
@@ -50,6 +51,10 @@ function App() {
       </div>
       <div>
         <FormularioUsuario></FormularioUsuario>
+      </div>
+      <div>
+        <h3>Formulario con FormData:</h3>
+        <FormularioFormData></FormularioFormData>
       </div>
     </div>
   );

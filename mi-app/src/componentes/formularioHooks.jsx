@@ -6,6 +6,7 @@ const FormularioUsuario = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [usuarioCreado, setUsuarioCreado] = useState(false);
   const crearUsuario = (e) => {
     e.preventDefault();
     const nuevoUsuario = {
@@ -16,10 +17,17 @@ const FormularioUsuario = () => {
       confirmPassword,
     };
     console.log("Welcome", nuevoUsuario);
+    setUsuarioCreado(true);
   };
+
   return (
     <form onSubmit={crearUsuario}>
       <div>
+        {usuarioCreado ? (
+          <h3>Gracias por subir el formulario!!</h3>
+        ) : (
+          <h3>Bienvenido, porfavor sube el formulario</h3>
+        )}
         <label>Nombre:</label>
         <input type="text" onChange={(e) => setFirstName(e.target.value)} />
       </div>
