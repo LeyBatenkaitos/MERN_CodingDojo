@@ -17,3 +17,7 @@
   border: 5px solid darkred;
   padding: 10px;
 }
+
+.errorFormulario {
+  color: red;
+}
