@@ -6,6 +6,8 @@ import CartaPersona from "./componentes/percard";
 import FormularioUsuario from "./componentes/formularioHooks";
 import "./App.css";
 import FormularioFormData from "./componentes/formularioFormData";
+import FormularioCajas from "./componentes/Generador de Cajas/FormularioCajas";
+import Caja from "./componentes/Generador de Cajas/Caja";
 
 function App() {
   return (
@@ -55,6 +57,10 @@ function App() {
       <div>
         <h3>Formulario con FormData:</h3>
         <FormularioFormData></FormularioFormData>
+      </div>
+      <div>
+        <FormularioCajas />
+        <Caja />
       </div>
     </div>
   );
