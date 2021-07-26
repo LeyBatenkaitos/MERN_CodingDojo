@@ -28,8 +28,8 @@ const FormularioFormData = () => {
       errors.correo = "El correo tiene que tener mas de 5 caracteres";
     if (contraseña.length < 8)
       errors.contraseña = "Tiene que tener mas de 8 Caracteres";
-    if (contraseña !== confirmarContraseña)
-      errors.confirmarContraseña = "Las contraseñas no coinciden, Verifiquelas";
+    if (contraseña !== confirmarContraseña);
+    errors.confirmarContraseña = "Las contraseñas no coinciden, Verifiquelas";
 
     setErrorFormulario(errors);
     return !Object.keys(errors).length;

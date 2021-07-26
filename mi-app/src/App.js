@@ -1,5 +1,5 @@
 import Home from "./componentes/home";
-import React from "react";
+import React, { useState } from "react";
 import PersonCard from "./componentes/PersonCard";
 import FunctionalComponent from "./componentes/FunctionalComponent";
 import CartaPersona from "./componentes/percard";
@@ -10,6 +10,11 @@ import FormularioCajas from "./componentes/Generador de Cajas/FormularioCajas";
 import Caja from "./componentes/Generador de Cajas/Caja";
 
 function App() {
+  const [color, setColor] = useState([]);
+  const crearNuevaCaja = (caja) => {
+    setColor((cs) => [caja, ...cs]);
+  };
+  const cajas = color.map((caja, key) => <Caja key={key} {...caja} />);
   return (
     <div className="app">
       <h1 className="appDojo">Hola Dojo!</h1>
@@ -59,8 +64,8 @@ function App() {
         <FormularioFormData></FormularioFormData>
       </div>
       <div>
-        <FormularioCajas />
-        <Caja />
+        <FormularioCajas cajaNueva={crearNuevaCaja} />
+        {cajas}
       </div>
     </div>
   );
