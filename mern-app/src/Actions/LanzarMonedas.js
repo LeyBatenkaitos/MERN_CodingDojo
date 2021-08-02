@@ -21,3 +21,4 @@ const fiveHeadsSync = () => {
 fiveHeadsSync()
   .then((msj) => console.log(msj))
   .catch((err) => console.error(err));
+//1:00:00

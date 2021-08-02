@@ -1,5 +1,6 @@
 import Tableros from "./componentes/Tableros";
 import "./App.css";
+import PokeAPI from "./componentes/PokeAPI";
 
 const dataBase = [
   { heading: "contenido 1", html: "<p>contenido importante</p>" },
@@ -9,7 +10,12 @@ const dataBase = [
 function App() {
   return (
     <div>
-      <Tableros tabs={dataBase} />
+      <div>
+        <Tableros tabs={dataBase} />
+      </div>
+      <div>
+        <PokeAPI />
+      </div>
     </div>
   );
 }
