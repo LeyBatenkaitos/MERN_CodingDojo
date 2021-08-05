@@ -1,6 +1,6 @@
-//import Tableros from "./componentes/Tableros";
+// import Tableros from "./componentes/Tableros";
 import "./App.css";
-//import PokeAPI from "./componentes/PokeAPI";
+// import PokeAPI from "./componentes/PokeAPI";
 import { Router } from "@reach/router";
 import Numeros from "./componentes/Numeros";
 import Palabra from "./componentes/Palabra";
@@ -31,4 +31,3 @@ function App() {
   );
 }
 export default App;
-//minuto 1:50:00
