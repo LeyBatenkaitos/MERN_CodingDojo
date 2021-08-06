@@ -1,0 +1,9 @@
+#nuevo usuario
+
+GET  http://localhost:5000/api/users/new
+###Nueva Compañia
+
+GET  http://localhost:5000/api/companies/new
+###Nueva compañia y usuario
+
+GET  http://localhost:5000/api/user/company

@@ -1,0 +1,15 @@
+{
+  "name": "api-falsa",
+  "version": "1.0.0",
+  "description": "api falsa",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Gabriel Hernandez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "faker": "^5.5.3"
+  }
+}
