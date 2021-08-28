@@ -39,6 +39,14 @@ const ProductoSchema = new mongoose.Schema({
     type: Number,
     min: [0, "No puedes tener menos de 1 articulo"],
   },
+  cantidadDeVotos: {
+    type: Number,
+    default: 0,
+  },
+  ratingPromedio: {
+    type: Number,
+    default: 0,
+  },
 });
 
 const ProductoModel = mongoose.model("producto", ProductoSchema);

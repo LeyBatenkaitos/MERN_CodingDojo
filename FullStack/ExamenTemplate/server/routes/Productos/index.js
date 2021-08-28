@@ -4,6 +4,7 @@ const router = Router();
 router.get("/test", (req, res) => res.json({ productos: "Conexion Optima" }));
 router.put("/:productoID", require("../../controllers/editarProducto"));
 router.put("/vender/:productoID", require("../../controllers/venderProducto"));
+router.put("/votar/:productoID", require("../../controllers/votarProducto"));
 router.delete("/:productoID", require("../../controllers/eliminarProducto"));
 router.post("/nuevo", require("../../controllers/nuevoProducto"));
 router.get("/:productoID", require("../../controllers/productoPorId"));
